@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.one{
+    background-image: url(./images/15.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 608px;
+    opacity: 0.9;
+    animation: changeImage 20s infinite;
+}
+@keyframes changeImage {
+    20%{
+        background-image: url(./images/15.jpg);
+    }
+    40% {
+        background-image: url(./images/14.jpg);
+    }
+    60% {
+        background-image: url(./images/11.jpg);
+    }
+    80% {
+        background-image: url(./images/13.jpg);
+        /* color: white; */
+    }
+}
+.digits{
+    color:#f00;
+    text-shadow: 3px 3px 10px white;
+}
+.heading{
+    /* background-color: crimson; */
+    padding: 1%;
+    text-align: center;
+}
+.heading h1{
+    position: relative;
+    color: white;
+    text-shadow: 3px 3px 10px red;
+    font-size:3rem;
+    padding:2% 0 0 0;
+}
+.label{
+    color:black;
+    font-weight: 700;
+    text-shadow: 3px 3px 10px white;
+    letter-spacing: 3px;
+}
+#tc{
+    position: absolute;
+    right: 50px;
+    top:10px;
+    font-size: 12px;
+    font-weight: 80;
+    padding:8px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    /* color: white; */
+}
+#tc:hover {
+    background-color: yellow;
+    transition: 1s;
+}
+.tcc{
+    position: absolute;
+    right:20px;
+    top:60px;
+    margin: 0 auto;
+    text-align:start;
+    width:440px;
+    color: black;
+    display: none;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: lightseagreen;
+    box-shadow: 3px 3px 10px;
+    border-radius: 20px;
+    padding: 10px;
+    animation: one infinite 1 2s linear;
+}
+@keyframes one {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+.tcc i{
+    font-size: 13px;
+    margin-left: 20px;
+}
+.show{
+    display: block;
+}
+.two{
+    /* background-color: yellow; */
+    text-align: center;
+    padding:3%;
+}
+.content{
+    font-size: 30px;
+    font-weight: 900;
+}
+#number{
+    padding: 1% 1%;
+    text-align: center;
+    border-radius: 20px;
+    font-size:1rem ;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-family: fantasy;
+
+}
+#btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #f44336;
+    border: 2px solid #ffffff;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 1% 0 0 0;
+    border-radius: 20px;
+}
+
+.three{
+    /* background-color: aquamarine; */
+    padding: 50px;
+}
+#ans{
+    /* background-color: burlywood; */
+    font-size:60px;
+    font-weight: 900;
+    margin-top: -40px;
+}
+.result{
+    /* background-color: burlywood; */
+    font-size: 25px;
+    font-weight: 600;
+    width:50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding:10px;
+}
+.common{
+    display: none;
+    color: black;
+    font-weight: 600;
+    /* text-shadow:3px 3px 10px white ; */
+    font-family: Arial, Helvetica, sans-serif;
+    border:3px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px;
+    
+}
+.common:hover{
+    border-color:white;
+    transition: 2s;
+}
